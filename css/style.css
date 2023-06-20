@@ -8,11 +8,15 @@
   --color-white: #ffffff;
   --color-grey: #a5a5a5;
   --color-light-grey: #f7f7f7;
+  --color-title: rgb(30, 30, 180);
+  --color-border: blue;
 
   --button-radius: 35px;
 
   --font-raleway: "Raleway", sans-serif;
   --font-open-sans: "Open Sans", sans-serif;
+
+ 
 }
 * {
   box-sizing: border-box;
@@ -27,43 +31,79 @@ a {
   width: 1352px;
   margin: 0 auto;
 }
-.header {
-    height: 70px;
-    background-color: var(--color-grey);
-}
-.header_container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 100%;
-  }
-  .project_title{
-    font-size: 2em;
-    font-weight: 700;
-   
-    
-  }
-  .nav_buttons {
-    display: flex;
-    justify-content: space-between;
-  }
-  .nav_link {
-    color: var(--color-white);
-    font-weight: 700;
-    font-size: 0.6875rem;
-    text-transform: uppercase;
-    padding: 28px 18px 22px;
-    border-bottom: 4px solid transparent;
-    letter-spacing: 0.1875rem;
-  }
   
-  .nav_link:hover {
-    color: var(--color-black);
-    border-color: var(--color-primary);
-  }
-  .nav_element {
-    padding: 0 26px;
-  }
-  .nav_element:last-child {
-    padding-right: 0;
-  }
+/*header-styling*/
+.header {
+  width: 100%;
+  height: 70px;
+  position: fixed;
+  top: 0;
+  box-shadow: 0 3px 6px var(--color-primary-shadow);
+  
+}
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  background-color: var(--color-grey);
+}
+.logo{
+  padding-left: 0.5%;
+}
+.projectTitle {
+  font-size: 2em;
+  font-weight: 700;
+  color: var(--color-title);
+}
+.nav__buttons {
+  display: flex;
+  justify-content: space-between;
+}
+.nav__link {
+  color: var(--color-white);
+  font-weight: 700;
+  font-size: 0.6875rem;
+  text-transform: uppercase;
+  padding: 28px 18px 22px;
+  border-bottom: 4px solid transparent;
+  letter-spacing: 0.1875rem;
+}
+
+.nav__link:hover {
+  color: var(--color-black);
+  border-color: var(--color-border);
+}
+.nav__element {
+  padding: 0 26px;
+}
+.nav__element:last-child {
+  padding-right: 0;
+}
+
+/*balance-container-styling*/
+.balance-container {
+  width: 80%;
+  height: 70px;
+  display: flex;
+  border: solid 2px var(--color-black);
+  background-color: var(--color-green);  
+}
+
+.balance {
+  display: flex;
+  padding-left: 10%;
+  justify-content: space-around;
+  align-items: center;
+  font-weight: 700;
+  font-size: 2rem;
+  color: black;
+}
+.incomesAndExpenses_container{
+  display: flex;
+  width: 80%;
+  height: 100vh;
+  background-color: var(--color-primary);
+}
+
+/* section about me - styling */

@@ -14,25 +14,97 @@
   </head>
   <body>
     <header class="header">
-      <div class="container header_container">
+      <div class="container header__container">
         <img class="logo" src="assets/logo-magyarrigo.svg" />
-        <h1 class="project_title">HouseholdBudget</h1>
+        <h1 id="home" class="projectTitle">HouseholdBudget</h1>
         <nav>
-          <ul class="nav_buttons">
-            <li class="nav_element">
-              <a href="#incomes" class="nav_link">INCOMES</a>
+          <ul class="nav__buttons">
+            <li class="nav__element">
+              <a href="#incomes" class="nav__link">INCOMES</a>
             </li>
-            <li class="nav_element">
-              <a href="#expenses" class="nav_link">EXPENSES</a>
+            <li class="nav__element">
+              <a href="#expenses" class="nav__link">EXPENSES</a>
             </li>
-            <li class="nav_element">
-              <a href="#aboutMe" class="nav_link">ABOUTME</a>
+            <li class="nav__element">
+              <a href="#aboutMe" class="nav__link">ABOUTME</a>
             </li>
           </ul>
         </nav>
       </div>
     </header>
+    <main>
+      <container class="container main-container">
+        <div class="balance-container">
+          <h1 class="balance">pipihpihpihgh</h1>
+        </div>
+        <div class="container incomesAndExpensesContainer">
+          <section class="incomes"></section>
+          <section class="expenses"></section>
+        </div>
 
-    <container class="container"> </container>
+        <section class="container aboutMe__container">
+          <div class="aboutMe__myPicture">
+            <img class="aboutMe__myPicture--Photo" src="assets/photo_2.jpg" />
+          </div>
+
+          <div class="aboutMe__myCV">
+            <h2 id="about">about Me</h2>
+            <p>
+              I graduated from the Technical University in Budapest. I'm Master
+              of Science in Nuclear Power Engineering. I have been interested in
+              programming since my studies. This year I became interested in
+              creating websites, so I decided to learn English and complete a
+              "Frontend Developer" course at CODERSLAB and "Java Script and
+              React" course at FUTURE COLLARS.
+            </p>
+
+            <p>
+              Fluent in German, Russian and Hungarian. English - B2. My native
+              language is Polish.
+            </p>
+
+            <p>
+              My portfolio can be seen in the "Openning section". I will be
+              happy to answer your questions.
+            </p>
+
+            <p>
+              Basketball is my cup of tea. I was a basketball referee for 25
+              years.
+            </p>
+          </div>
+        </section>
+      </container>
+    </main>
+
+    <footer class="footer" id="contact">
+      <div class="footer__container">
+        <div class="footer__container--logo">
+          <img src="assets/logo-magyarrigo.svg" />
+        </div>
+        <div class="footer__container--buttons">
+          <a href="#home">HOME</a>
+          <a href="#offer">OFFER</a>
+        </div>
+
+        <div class="footer__container--contact">
+          <div id="phone">
+            <img src="assets/phone.svg" />
+            <p>+48 535 092 608</p>
+          </div>
+          <div id="mail">
+            <img src="assets/mail.svg" />
+            <p>b.drozd07@gmail.com</p>
+          </div>
+        </div>
+        <div class="footer_container--mediaIcons">
+          <img src="assets/Twitter.svg" />
+          <img src="assets/Facebook.svg" />
+          <img id="tiktok" src="assets/Tiktok.jpg" />
+        </div>
+      </div>
+    </footer>
+
+    <script src="./js/app.js " type="module"></script>
   </body>
 </html>
